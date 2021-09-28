@@ -1,6 +1,6 @@
 # Quick-Foods
 
-## quick foods is a static landing page for a fake fast food company
+## Quick Foods is a static landing page for a fake fast food company
 
 # Primary Focus 
 
