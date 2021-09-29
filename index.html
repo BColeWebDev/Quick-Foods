@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Quick Foods</title>
+  </head>
+  <body>
+    <main>
+      <!-- nav -->
+      <header>
+        <div class="navbar-title">
+          <h1>Quick Foods</h1>
+        </div>
+
+        <nav class="navbar">
+          <ul class="nav" id="nav">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#"> News</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="#">Pages</a></li>
+          </ul>
+          <div class="nav-icon" onclick="openModal()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </header>
+      <!-- Hero -->
+      <section id="hero">
+        <article id="hero-image">
+          <div class="hero-heading">
+            <h1>New <br />Menu</h1>
+            <h2>Seafood Pizza</h2>
+            <button class="button hero-button">Order Now</button>
+          </div>
+        </article>
+      </section>
+      <!-- About Us -->
+      <section class="about-us">
+        <h1 class="about-us-title">About Us</h1>
+        <div class="about-us-body">
+          <p>
+            <b>L</b>orem ipsum dolor sit amet consectetur adipisicing elit.
+            Ducimus tempora cupiditate debitis incidunt alias beatae ab, rem
+            perferendis sed! Modi. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Veritatis nihil assumenda similique quaerat. In
+            qui labore minus doloribus quo aliquam eius, quam distinctio quae
+            quaerat quas consequuntur vero dolorum? Voluptas?
+          </p>
+        </div>
+      </section>
+      <!-- menu -->
+      <section class="menu">
+        <h1 class="menu-title">Our Menu</h1>
+        <nav class="nav-menu">
+          <ul id="menu-items">
+            <li>Burger</li>
+            <li>Toast</li>
+            <li>Pizza</li>
+            <li>Salad</li>
+            <li>Drinks</li>
+            <li>Deserts</li>
+          </ul>
+        </nav>
+        <section class="menu-prices">
+          <div class="rounded-icon"></div>
+          <div class="menu-card">
+            <div class="menu-card-image">
+              <img src="./images/AdobeStock_231001129.jpeg" alt="..." />
+            </div>
+            <div class="menu-card-body">
+              <h2>Burger Shop - Spicy Burger</h2>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+
+              <button class="menu-card-button">Add to Cart</button>
+
+              <div class="menu-card-footer">
+                <div class="icon-container">
+                  <div class="icon icon-spicy"></div>
+                  <p class="h3">Spicy</p>
+                </div>
+                <div class="icon-container">
+                  <div class="icon icon-cow"></div>
+                  <p class="h3 m-1">100% Beef</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-icon"></div>
+          <div class="menu-card">
+            <div class="menu-card-image">
+              <img src="./images/AdobeStock_199394049.jpeg" alt="..." />
+            </div>
+            <div class="menu-card-body">
+              <h2>Quick Foods - Dexlue Burgerr</h2>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+
+              <button class="menu-card-button">Add to Cart</button>
+
+              <div class="menu-card-footer">
+                <div class="icon-container">
+                  <div class="icon icon-spicy"></div>
+                  <p class="h3">Spicy</p>
+                </div>
+                <div class="icon-container">
+                  <div class="icon icon-cow"></div>
+                  <p class="h3 m-1">100% Beef</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-icon"></div>
+          <div class="menu-card">
+            <div class="menu-card-image">
+              <img src="./images/AdobeStock_248779461.jpeg" alt="..." />
+            </div>
+            <div class="menu-card-body">
+              <h2>Mountain of Cheese</h2>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+
+              <button class="menu-card-button">Add to Cart</button>
+
+              <div class="menu-card-footer">
+                <div class="icon-container">
+                  <div class="icon icon-spicy"></div>
+                  <p class="h3">Spicy</p>
+                </div>
+                <div class="icon-container">
+                  <div class="icon icon-cow"></div>
+                  <p class="h3 m-1">100% Beef</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Features -->
+
+      <section class="banner-container">
+        <h2>Free Delivery</h2>
+        <h4>Sandwitch Day</h4>
+        <div class="price">
+          <h1>$3<sup>99</sup></h1>
+          <ul>
+            <li>Sandwitch</li>
+            <li>Drinks</li>
+            <li>Salad</li>
+          </ul>
+        </div>
+        <button>Order Online</button>
+      </section>
+
+      <!-- Services -->
+      <section class="services-container">
+        <article class="services">
+          <div class="icon icon-clock"></div>
+          <h3>Fast Delivery</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, laboriosam!
+          </p>
+        </article>
+
+        <article class="services">
+          <div class="icon icon-bag"></div>
+          <h3>Fresh Food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, laboriosam!
+          </p>
+        </article>
+
+        <article class="services">
+          <div class="icon icon-hat"></div>
+          <h3>Experienced Chefs</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, laboriosam!
+          </p>
+        </article>
+
+        <article class="services">
+          <div class="icon icon-dish"></div>
+          <h3>A Variety of Dishes</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, laboriosam!
+          </p>
+        </article>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <section class="footer-section">
+          <h3>Quick Foods</h3>
+          <address>
+            <span>Address:</span> 123 Main Street New York, NY 90210
+          </address>
+          <a href="mailto:mail:info@loremlink.org">info@loremlink.org</a>
+        </section>
+        <!-- Footer -->
+        <section class="footer-section">
+          <h3>Our Menu</h3>
+          <ul>
+            <li><a href="#">Burger</a></li>
+            <li><a href="#">Pizza</a></li>
+            <li><a href="#">Toast</a></li>
+            <li><a href="#">Salad</a></li>
+            <li><a href="#">Drinks</a></li>
+            <li><a href="#">Deserts</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-section">
+          <h3>Newsletters</h3>
+          <div class="subscribe">
+            <form action="#">
+              <input type="text" placeholder="Your Email" />
+              <button>Subscribe</button>
+            </form>
+          </div>
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>
