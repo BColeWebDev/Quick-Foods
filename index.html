@@ -9,8 +9,10 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
+      crossorigin
+      scr="anonymous"
     />
+    <script src="app.js" defer></script>
     <title>Quick Foods</title>
   </head>
   <body>
@@ -18,19 +20,21 @@
       <!-- nav -->
       <header>
         <div class="navbar-title">
-          <h1>Quick Foods</h1>
+          <a href="index.html">
+            <h1>Quick Foods</h1>
+          </a>
         </div>
 
         <nav class="navbar">
-          <ul class="nav" id="nav">
+          <div class="nav-icon">
+            <i class="fas fa-bars" onclick="modal()"></i>
+          </div>
+          <ul class="nav modal-close" id="nav">
             <li><a href="#">Menu</a></li>
             <li><a href="#"> News</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="#">Pages</a></li>
           </ul>
-          <div class="nav-icon" onclick="openModal()">
-            <i class="fas fa-bars"></i>
-          </div>
         </nav>
       </header>
       <!-- Hero -->
@@ -45,7 +49,7 @@
       </section>
       <!-- About Us -->
       <section class="about-us">
-        <h1 class="about-us-title">About Us</h1>
+        <h1 class="title">About Us</h1>
         <div class="about-us-body">
           <p>
             <b>L</b>orem ipsum dolor sit amet consectetur adipisicing elit.
@@ -59,51 +63,60 @@
       </section>
       <!-- menu -->
       <section class="menu">
-        <h1 class="menu-title">Our Menu</h1>
+        <h1 class="title">Our Menu</h1>
         <nav class="nav-menu">
-          <ul id="menu-items">
-            <li>Burger</li>
-            <li>Toast</li>
-            <li>Pizza</li>
-            <li>Salad</li>
-            <li>Drinks</li>
-            <li>Deserts</li>
+          <ul class="menu-list">
+            <li class="list-item"><a href="#">Burger</a></li>
+            <li class="list-item"><a href="#">Toast</a></li>
+            <li class="list-item"><a href="#">Pizza</a></li>
+            <li class="list-item"><a href="#">Salad</a></li>
+            <li class="list-item"><a href="#">Drinks</a></li>
+            <li class="list-item"><a href="#">Deserts</a></li>
           </ul>
         </nav>
-        <section class="menu-prices">
-          <div class="rounded-icon"></div>
+        <section class="menu-items">
           <div class="menu-card">
             <div class="menu-card-image">
+              <div class="rounded-icon"></div>
               <img src="./images/AdobeStock_231001129.jpeg" alt="..." />
             </div>
-            <div class="menu-card-body">
+            <div class="menu-card-title">
               <h2>Burger Shop - Spicy Burger</h2>
+              <div class="card-price">
+                <h3>$10.99</h3>
+              </div>
+            </div>
+            <div class="menu-card-body">
               <p>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
 
               <button class="menu-card-button">Add to Cart</button>
-
-              <div class="menu-card-footer">
-                <div class="icon-container">
-                  <div class="icon icon-spicy"></div>
-                  <p class="h3">Spicy</p>
-                </div>
-                <div class="icon-container">
-                  <div class="icon icon-cow"></div>
-                  <p class="h3 m-1">100% Beef</p>
-                </div>
+            </div>
+            <div class="menu-card-footer">
+              <div class="icon-container">
+                <div class="icon icon-spicy"></div>
+                <p class="h3">Spicy</p>
+              </div>
+              <div class="icon-container">
+                <div class="icon icon-cow"></div>
+                <p class="h3 m-1">100% Beef</p>
               </div>
             </div>
           </div>
-          <div class="rounded-icon"></div>
+
           <div class="menu-card">
             <div class="menu-card-image">
               <img src="./images/AdobeStock_199394049.jpeg" alt="..." />
             </div>
+            <div class="menu-card-title">
+              <h2>Quick Foods - Dexlue Burger</h2>
+              <div class="card-price">
+                <h3>$10.99</h3>
+              </div>
+            </div>
             <div class="menu-card-body">
-              <h2>Quick Foods - Dexlue Burgerr</h2>
               <p>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -123,13 +136,18 @@
               </div>
             </div>
           </div>
-          <div class="rounded-icon"></div>
+
           <div class="menu-card">
             <div class="menu-card-image">
               <img src="./images/AdobeStock_248779461.jpeg" alt="..." />
             </div>
-            <div class="menu-card-body">
+            <div class="menu-card-title">
               <h2>Mountain of Cheese</h2>
+              <div class="card-price">
+                <h3>$10.99</h3>
+              </div>
+            </div>
+            <div class="menu-card-body">
               <p>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -146,6 +164,36 @@
                   <div class="icon icon-cow"></div>
                   <p class="h3 m-1">100% Beef</p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-image">
+              <div class="rounded-icon"></div>
+              <img src="./images/AdobeStock_231001129.jpeg" alt="..." />
+            </div>
+            <div class="menu-card-title">
+              <h2>Burger Shop - Spicy Burger</h2>
+              <div class="card-price">
+                <h3>$10.99</h3>
+              </div>
+            </div>
+            <div class="menu-card-body">
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+
+              <button class="menu-card-button">Add to Cart</button>
+            </div>
+            <div class="menu-card-footer">
+              <div class="icon-container">
+                <div class="icon icon-spicy"></div>
+                <p class="h3">Spicy</p>
+              </div>
+              <div class="icon-container">
+                <div class="icon icon-cow"></div>
+                <p class="h3 m-1">100% Beef</p>
               </div>
             </div>
           </div>
@@ -157,7 +205,7 @@
         <h2>Free Delivery</h2>
         <h4>Sandwitch Day</h4>
         <div class="price">
-          <h1>$3<sup>99</sup></h1>
+          <h1>$3.<sup>99</sup></h1>
           <ul>
             <li>Sandwitch</li>
             <li>Drinks</li>
@@ -206,38 +254,34 @@
         </article>
       </section>
 
-      <!-- Footer -->
-      <footer>
-        <section class="footer-section">
-          <h3>Quick Foods</h3>
-          <address>
-            <span>Address:</span> 123 Main Street New York, NY 90210
-          </address>
-          <a href="mailto:mail:info@loremlink.org">info@loremlink.org</a>
+      <!-- Contact Us -->
+      <section class="contact-us">
+        <h1 class="title">Contact Us</h1>
+        <div class="contact-us-container">
+          <section class="contact">
+            <h3>Quick Foods</h3>
+            <address>
+              <span>Address:</span> 123 Main Street New York, NY 90210
+            </address>
+            <a href="mailto:mail:info@loremlink.org">info@loremlink.org</a>
+          </section>
+          <!-- Footer -->
+  
+          <section class="contact">
+            <h3>Newsletters</h3>
+            <div class="subscribe">
+              <form action="#">
+                <input type="text" placeholder="Your Email" />
+                <button>Subscribe</button>
+              </form>
+            </div>
+          </section>
         </section>
-        <!-- Footer -->
-        <section class="footer-section">
-          <h3>Our Menu</h3>
-          <ul>
-            <li><a href="#">Burger</a></li>
-            <li><a href="#">Pizza</a></li>
-            <li><a href="#">Toast</a></li>
-            <li><a href="#">Salad</a></li>
-            <li><a href="#">Drinks</a></li>
-            <li><a href="#">Deserts</a></li>
-          </ul>
-        </section>
+        </div>
+       
 
-        <section class="footer-section">
-          <h3>Newsletters</h3>
-          <div class="subscribe">
-            <form action="#">
-              <input type="text" placeholder="Your Email" />
-              <button>Subscribe</button>
-            </form>
-          </div>
-        </section>
-      </footer>
+      <!-- Footer -->
+      <footer></footer>
     </main>
   </body>
 </html>
