@@ -4,7 +4,7 @@
 
 # Primary Focus 
 
-## this application is the starting point for my web development career and the basic skills that are needed when creating a static landing page.
+## This application is the starting point for my web development career and the basic skills that are needed when creating a static landing page.
 
 # Tech Stack 
 
