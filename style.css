@@ -464,7 +464,7 @@ header {
 }
 
 .icon-spicy {
-  background: url(./images/pepper-hot-solid.svg);
+  background: url(/Images/pepper-hot-solid.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -475,22 +475,22 @@ header {
 }
 
 .icon-cow {
-  background: url(./images/noun_grass\ fed\ cow_2748456.svg);
+  background: url(/Images/noun_grass\ fed\ cow_2748456.svg);
   background-repeat: no-repeat;
   width: 80px;
 }
 .icon-clock {
-  background-image: url(./Images/clock-regular.svg);
+  background-image: url(/Images/clock-regular.svg);
 }
 
 .icon-dish {
-  background-image: url(./Images/dish.svg);
+  background-image: url(/Images/dish.svg);
 }
 .icon-bag {
-  background-image: url(./Images/shopping-bag-solid.svg);
+  background-image: url(/Images/shopping-bag-solid.svg);
 }
 .icon-hat {
-  background-image: url(./Images/chef-hat.svg);
+  background-image: url(/Images/chef-hat.svg);
 }
 
 /* Contact Us */
