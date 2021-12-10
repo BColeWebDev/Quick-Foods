@@ -1,11 +1,12 @@
 # Quick-Foods
 
-## Quick Foods is a static landing page for a fake fast food company
+ Quick Foods is a static landing page for a fake fast food company developed in HTML and CSS. https://quick-foods-restaurant.netlify.app/
 
 # Primary Focus 
 
-## this application is the starting point for my web development career and the basic skills that are needed when creating a static landing page.
+ This application is the starting point for my web development career and the basic skills that are needed when creating a static landing page.
+ 
 
 # Tech Stack 
 
-## HTML5 and CSS 
+ HTML5 and CSS 
