@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@1&display=swap");
 :root {
   --icon-background: #6d6a75;
-  --ancor-color: rgb(16, 41, 29);
+  --ancor-color: rgb(207, 211, 209);
   --button-primary: rgb(17, 17, 17);
-  --navigation-color: #f1f1f1;
+  --navigation-color: #dddcdc;
 }
 * {
   margin: 0;
@@ -17,16 +17,9 @@
 
 html {
   font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: sans-serif;
-}
 li {
   list-style-type: none;
   margin: 10px;
@@ -48,7 +41,7 @@ body {
   font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 main {
-  width: 100%;
+  background-color: rgba(71, 70, 70, 0.808);
 }
 /* button */
 button {
@@ -68,20 +61,24 @@ button:hover {
 /* TopNavigation */
 header {
   background-color: var(--navigation-color);
-  margin-bottom: 1rem;
-  padding: 1rem;
   width: 100%;
   display: flex;
-  padding: 0.8rem;
+  padding: 3rem;
   align-items: center;
-  position: sticky;
   justify-content: space-between;
+}
+header > .navbar-title > a {
+  color: black;
 }
 .nav {
   width: 100%;
   justify-content: center;
   align-items: center;
   display: none;
+}
+.nav > li > a {
+  color: #000;
+  font-weight: bold;
 }
 
 .modal-close {
@@ -104,6 +101,7 @@ header {
 @media (min-width: 768px) {
   .nav {
     display: flex;
+    font-size: 20px;
   }
   .nav-icon {
     display: none;
@@ -112,11 +110,7 @@ header {
 
 @media (min-width: 1024px) {
   .navbar-title {
-    font-size: 25px;
-  }
-  .nav {
     font-size: 20px;
-    margin-right: 4rem;
   }
 }
 
@@ -185,20 +179,20 @@ header {
 .title {
   text-align: center;
   font-size: 40px;
-  padding: 0.5rem;
+  margin-bottom: 20px;
+  color: #d1d1d1;
 }
 
 /* About us  */
 .about-us {
-  padding: 3rem;
-  background-color: #e0dfdf;
-  margin: 0.3rem 0.4rem;
+  padding: 5rem;
 }
 .about-us-body {
-  padding: 0.9rem;
+  line-height: 2.15;
+  color: #d1d1d1;
 }
 .about-us-body > p {
-  margin: 0.3rem;
+  margin: 0.5rem;
 }
 
 @media (min-width: 1024px) {
@@ -211,9 +205,13 @@ header {
 }
 /* Menu Selection*/
 .menu {
-  margin: 0.4rem;
+  margin: 0 0.4rem;
+  background: url(./Images/home-slide-1-1920x800.jpeg);
+  background-attachment: fixed;
 }
-
+.menu-title-container {
+  padding: 2rem;
+}
 .menu-card-title {
   margin: 1rem;
   display: flex;
@@ -230,20 +228,27 @@ header {
   margin-bottom: 2rem;
 }
 .menu-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   transition: 300ms ease-in-out;
 }
 .list-item {
-  margin: 0.5rem;
-  font-size: 19px;
+  font-size: 16px;
   color: #e0dfdf;
+  display: flex;
+  justify-content: center;
   border: 1px solid #e0dfdf;
-  padding: 1.25rem;
+  padding: 1.25rem 4rem;
   border-radius: 16px;
 }
-
+.list-item:hover {
+  border: 1px solid #f9b129;
+}
+@media (min-width: 768px) {
+  .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .card-price {
   display: flex;
   justify-content: center;
@@ -353,29 +358,55 @@ header {
 
 /* Banner */
 .banner-container {
+  margin: 0 0.4rem;
   text-align: center;
-  margin: 3rem 0;
-  background: url(../Images/parallax-03.png);
-  width: 100%;
-  background-color: darkgray;
+  background: url(./Images/home-slide-1-1920x800.jpeg);
+  background-attachment: fixed;
+  box-shadow: 20px 10px 30px rgba(15, 15, 15, 0.6);
+}
+.parallax {
+  display: flex;
+  background: url(./Images//parallax-03.png);
+  background-position: center;
+  position: relative;
+  top: 0;
 }
 .banner-container > button {
   margin-bottom: 0.5rem;
 }
-.banner-container h2,
-.banner-container h4 {
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner h2,
+.banner h4 {
   color: #fff;
   font-weight: 500;
   font-family: "Changa One";
   font-style: italic;
 }
-.banner-container > h2 {
-  font-size: 3.6rem;
+.banner > h2 {
+  display: flex;
+  align-items: center;
+  font-size: 70px;
+  margin-bottom: 10px;
 }
-.banner-container > h4 {
-  font-size: 3rem;
+.banner > h2::before,
+.banner > h2::after {
+  content: "";
+  display: block;
+  border-top: 4px solid #f9b129;
+  width: 10%;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-.banner-container button {
+.banner > h4 {
+  font-size: 30px;
+}
+.banner button {
   position: initial;
 }
 .price {
@@ -401,12 +432,18 @@ header {
   margin: 1rem 7px;
 }
 
+@media (min-width: 768px) {
+  .banner {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* Services */
 .services-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0.3rem 0.2rem;
 }
 
 .services {
@@ -414,11 +451,16 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0.3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 @media (min-width: 768px) {
   .services-container {
     flex-direction: row;
+    justify-content: space-around;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .services h3 {
@@ -426,6 +468,7 @@ header {
   padding: 0.8rem;
 }
 .services p {
+  color: #d1d1d1;
   margin: 0.7rem;
   text-align: center;
 }
@@ -439,13 +482,21 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 768px) {
+  .services-container {
+    height: 450px;
+  }
+  .services p {
+    font-size: 20px;
+  }
+}
 
 /* Icons */
 .icon {
   background-repeat: no-repeat;
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 48pt;
+  height: 48pt;
 }
 
 .icon-spicy {
@@ -467,6 +518,7 @@ header {
 }
 .icon-clock {
   background-image: url(/Images/clock-regular.svg);
+  color: cadetblue;
 }
 
 .icon-dish {
@@ -480,9 +532,14 @@ header {
 }
 
 /* Contact Us */
-
+.contact-us {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #111111;
+}
 .contact {
   padding: 1.125rem;
+  color: white;
 }
 .contact > h3 {
   font-size: 20px;
@@ -491,20 +548,18 @@ header {
 }
 .contact > address {
   font-size: 18px;
+  font-weight: bold;
+  color: white;
 }
 .contact > a {
   font-size: 16px;
-}
-.contact-us {
-  background-color: #e0dfdf;
+  color: white;
 }
 
 .contact-us-container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
 }
 
 .subscribe-input {
@@ -512,4 +567,37 @@ header {
   border-radius: 10px;
   border: none;
   margin-right: 5px;
+}
+@media (min-width: 768px) {
+  .subscribe-input {
+    width: 300px;
+  }
+  .contact > h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .contact > address {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .contact > a {
+    font-size: 20px;
+    color: rgb(214, 214, 214);
+  }
+}
+@media (min-width: 1024px) {
+  .subscribe-input {
+    width: 500px;
+  }
+  .contact > h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .contact > address {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
 }
